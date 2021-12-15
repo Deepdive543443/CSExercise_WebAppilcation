@@ -1,0 +1,342 @@
+body{
+    margin: 0px;
+    background-image: url("keys.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Logo and Navigotor */
+.Navigator{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 97px;
+    background-color: rgb(0, 0, 0,0.3);
+}
+
+.Navigator h1{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.Navigator img{
+    height: 90px;
+}
+
+.Navigator dl{
+    font-size: 15px;
+}
+
+.Navigator nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.Navigator a{
+    display: block;
+    color: azure;
+    padding: 38px;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+}
+
+.Navigator a:hover{
+    background: rgb(231, 228, 228);
+    color: black;
+}
+
+/* Description and login */
+main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 97;
+}
+
+main .main_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+main .description h1{
+    font-size: 70;
+    color:white;
+}
+
+main .description dl{
+    color:white;
+}
+
+main .login_interface{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 340px;
+    height: 280px;
+    background-color: rgb(155, 151, 151, 0.6);
+    border-radius: 15px;
+}
+
+main .login_interface .input_withicon{
+    display: flex;
+    background-color: white;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+/* main .login_interface .password{
+    display: flex;
+    background-color: white;
+    padding: 5px;
+    border-radius: 12px;
+} */
+
+input{
+    background-color: transparent;
+    border: 0;
+    padding-left: 8px;
+    outline: none;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 0;
+    height: 160px;
+}
+
+
+main .login_interface .buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+
+main .login_interface button{
+    cursor: pointer;
+}
+
+.inputbar_icon{
+    width: 24px;
+}
+
+/* Register interface part */
+.regis_interface{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 575px;
+    margin: 15px;
+    background-color: rgb(155, 151, 151, 0.6);
+    border-radius: 15px;
+}
+
+.register_title{
+    margin: 0;
+}
+
+.register_form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    /* align-items: center; */
+
+    margin: 0;
+}
+
+.register_form .regisform_block{
+    display: flex;
+    margin: 10px;
+    /* height: 60px; */
+    /* width: 213px; */
+    flex-direction: column;
+}
+
+.register_form h2{
+    margin: 5px;
+    font-size: 15px;
+}
+
+.register_form .input_withicon{
+/* .input_withicon{ */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: white;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.register_form .UnableToSubmit{
+    align-self: center;
+    font-size: 12px;
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 12px;
+    margin: 20px;
+    width: 120px;
+    
+}
+
+.register_form .unsubmit_button{
+    align-self: center;
+
+    border: none;
+    background-color: rgb(124, 124, 124);
+    color: black;
+    padding: 5px;
+    border-radius: 12px;
+    margin: 20px;
+    width: 120px;  
+}
+
+.register_form .submit_button{
+    align-self: center;
+
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 12px;
+    margin: 20px;
+    width: 120px;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;    
+}
+
+.register_form .submit_button:hover{
+    background-color: black;
+    color: white;   
+}
+
+
+/* Gallery interface part */
+.gallery_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+
+.gallery_block{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-evenly; */
+    justify-content:space-between;
+    align-items: center;
+    width: 400px;
+    height: 630px;
+    margin: 15px;
+    background-color: rgb(155, 151, 151, 0.8);
+    border-radius: 15px;
+}
+
+.gallery_block form{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+
+    height: 560px;
+}
+
+.gallery_block img{
+    max-width: 360px;
+    max-height: 270px;
+}
+
+.gallery_block .gallery_block_module{
+    /* .input_withicon{ */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        padding: 5px;
+        border-radius: 12px;
+    }
+
+.gallery_block .decription{
+    /* .input_withicon{ */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        background-color: white;
+        width: 360px;
+        height: 80px;
+        padding: 5px;
+        border-radius: 12px;
+    }
+
+    .gallery_block .decription textarea{
+        /* .input_withicon{ */
+            width: 350px;
+            height: 70px;
+            border: none;
+        }
+
+.gallery_block .content{
+    /* .input_withicon{ */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        background-color: white;
+        width: 360px;
+        height: 150px;
+        padding: 5px;
+        border-radius: 12px;
+    }
+
+.gallery_block .content textarea{
+        /* .input_withicon{ */
+width: 350px;
+height: 140px;
+border: none;
+}
+
+.gallery_block .submit_button{
+    align-self: center;
+
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 12px;
+    margin: 20px;
+    width: 120px;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;    
+}
+
+.gallery_block .submit_button:hover{
+    background-color: black;
+    color: white;   
+}
+
+.wrap {
+table-layout: fixed;
+word-wrap: break-all;
+word-break: normal;
+overflow: hidden;
+}

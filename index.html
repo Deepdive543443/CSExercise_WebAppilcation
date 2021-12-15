@@ -1,0 +1,45 @@
+<html lang = "en">
+    <meta charset="utf-8">
+    <head>
+        <title>Login</title>
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class = "Navigator">
+            <h1 class = "logo">
+                    <img src="icons/icons8-key-128.png">            
+            </h1>
+            <nav>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a>ABOUT</a></li>
+                <dl>Icon by icons8.com</dl>
+            </nav>          
+        </header>
+        <main>
+            <div class = "main_container">
+                <div class="Description">
+                    <h1>WELCOME<br>&nbsp;&nbsp;&nbsp;TO<br>LOVE & JOY</h1>
+                    <dl>Your gallery at G6077</dl>
+                </div>
+                <div class="login_interface">
+                    <h1>Login</h1>
+                    <form class="login_form" action='loginchecking.php' method='POST'>
+                        <div class = "input_withicon">
+                        <img src = "icons/user.png" class="inputbar_icon">
+                        <input type ="text" name = "txtUsername">
+                    </div>
+                    <div class = "input_withicon">
+                        <img src = "icons/password.png" class="inputbar_icon">
+                        <input type = "password" name = "txtPassword">
+                    </div>
+                    <div class = "buttons">
+                        <button type="submit">Login</button>
+                        <button><a href="forgot.html">Forgot password?</a></button>
+                    </form>                  
+                    </div>                  
+                </div>
+            </div>      
+        </main>
+    </body>
+</html>
